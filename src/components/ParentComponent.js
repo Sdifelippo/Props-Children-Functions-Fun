@@ -31,11 +31,11 @@ class ParentComponent extends Component {
     //clear our input by resetting state
     this.setState({whatToSay: ""});
 
-  }
+  }//*takes the input which is the value and will be dispayed
   render() {
     return (
       <div>
-        <div>//takes the input which is the value and will be dispayed
+        <div>
           <input onChange={this.handleInput} value={this.state.whatToSay} type="text" placeholder="Say It, Don't Spray It!" />
         </div>
         <div>
